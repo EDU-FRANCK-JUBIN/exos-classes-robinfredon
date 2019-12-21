@@ -33,9 +33,9 @@ namespace ConsoleApp1
         public string Prenom { get => prenom; set => prenom = value; }
         public string Tel { get => tel; set => tel = value; }
 
-        public String Afficher()
+        public void Afficher()
         {
-            return "Client : " + this.Nom + " " + this.Prenom + " - " + this.Tel;
+            Console.WriteLine("Client : " + this.Nom + " " + this.Prenom + " - " + this.Tel);
         }
     }
 }
